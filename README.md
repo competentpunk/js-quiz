@@ -1,5 +1,5 @@
 ## JS Code Quiz
-LINK GOES HERE
+https://competentpunk.github.io/js-quiz/
 
 ## Description
 
@@ -37,7 +37,7 @@ THEN I can save my initials and my score
 ## Installation
 
 Open the application in a browser by clicking on this link:
-LINK GOES HERE
+https://competentpunk.github.io/js-quiz/
 
 ## Usage
 
