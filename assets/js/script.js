@@ -1,4 +1,41 @@
 // Implement a timer
+
+// Selects element by class
+var timeEl = document.querySelector(".time");
+
+// Selects element by id
+var mainEl = document.getElementById("main");
+
+var secondsLeft = 11;
+
+function setTime() {
+  // Sets interval in variable
+  var timerInterval = setInterval(function() {
+    secondsLeft--;
+    timeEl.textContent = secondsLeft;
+
+    if(secondsLeft === 0) {
+      // Stops execution of action at set interval
+      clearInterval(timerInterval);
+      // Calls function to create and append image
+      sendMessage(" ");
+    }
+
+  }, 1000);
+}
+
+// Function to create and append colorsplosion image
+function sendMessage() {
+  timeEl.textContent = "Time's Up!";
+  // var imgEl = document.createElement("img");
+  // imgEl.setAttribute("src", "images/image_1.jpg");
+  // mainEl.appendChild(imgEl);
+
+}
+
+setTime();
+
+
 // Build the home screen
     // HTML box/template for the javascript content
     // Create an input box for players initials
