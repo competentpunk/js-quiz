@@ -1,4 +1,4 @@
-## JS Code Quiz
+## Code Quiz
 https://competentpunk.github.io/js-quiz/
 
 ## Description

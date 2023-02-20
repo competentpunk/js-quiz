@@ -1,0 +1,44 @@
+:root {
+    --sea: #006373;
+    --teal: #71a8a7;
+    --lightteal: #d5f5f5;
+    --light: #fffaf7;
+}
+
+a {
+    text-decoration: none;
+    color: var(--sea);
+}
+
+h3 {
+    color: var(--sea);
+}
+
+.container {
+    padding: 20px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    color: var(--light);
+    background-color: var(--sea);
+    border-radius: 10px;
+}
+
+.answer {
+    color: var(--light);
+    font-size: large;
+    padding: 10px;
+    margin: 10px;
+    width: max-content;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: var(--sea);
+    border-radius: 10px;
+
+}
+
+.playerTally {
+    margin-top: 20px;
+}
