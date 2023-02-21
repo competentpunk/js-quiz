@@ -42,3 +42,10 @@ button {
 .playerTally {
     margin-top: 20px;
 }
+
+
+/* DISPLAY NONE CLASS */
+
+.hidden {
+    display: none;
+}
