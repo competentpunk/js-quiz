@@ -19,7 +19,7 @@
     <div class="container">
         <div class="row">
             <div class="col-10">
-                <h3><a href="LINK TO HIGH SCORES">View High Scores</a></h3>
+                <h3 class="hslink">View High Scores</a></h3>
             </div>
             <!-- Timer -->
             <div class="col-2" id="main">
@@ -58,8 +58,11 @@
                 answer-4
             </div>
         </div>
-        <div class="col answer-alert">
-            <em>Wrong!</em>
+        <div class="col answer-correct hidden">
+            <em>Correct!</em>
+        </div>
+        <div class="col answer-wrong hidden">
+            Wrong.
         </div>
     </section>
 
@@ -92,8 +95,8 @@
                 <li>EA - 23
                 </li>
             </ol>
-            <div class="answer row">Go Back</div>
-            <div class="answer row">Clear High Scores</div>
+            <div class="answer back row">Go Back</div>
+            <div class="answer clear row">Clear High Scores</div>
         </div>
     </section>
     <script src="./assets/js/script.js"></script>

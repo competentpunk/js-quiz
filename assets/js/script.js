@@ -52,16 +52,9 @@ var qarray = [
   },
 ]
 
-var playerTally = 0;
-var playerScore = 0;
-console.log(qarray[playerTally].question)
-// playerTally++
-// console.log(qarray[playerTally].question)
 
 // Timer
-
 // Timer START on click
-
 var startbtn = document.querySelector(".startbtn");
 
 startbtn.addEventListener("click", function () {
@@ -76,7 +69,7 @@ var timeEl = document.querySelector(".time");
 // Selects element by id
 var mainEl = document.getElementById("main");
 
-var secondsLeft = 15;
+var secondsLeft = 75;
 
 function setTime() {
   var timerInterval = setInterval(function () {
@@ -104,71 +97,81 @@ function display() {
 }
 
 
+// Player score and final score
+var playerTally = 0;
+var playerScore = 0;
+console.log(qarray[playerTally].question)
 
-// Click to view high scores, show initials/scores
+// !!!!!!!! Attepmt to add counter to local storage
+// var count = localStorage.getItem("count");
+// var counter = document.querySelector(".answer");
+
+// counter.textContent = count;
+
+// answer.addEventListener("click", function() {
+//     count++;
+//     counter.textContent = count;
+//     localStorage.setItem("count", count);
+// });
 
 
-// Show 5 questions with answers squencially
-// Add up andwers as you go
 
 
 
+// !!!!!!!! Attempt to get the correct click to show "Correct!" text
+// var correct = document.getElementById(".answer-correct");
+//     // var wrongDisplay = document.getElementById(".answer-wrong");
+
+// correct.addEventListener("click", function () {
+//   document.querySelector(".answer-correct").classList.remove("hidden");
+//   display();
+// });
+
+
+
+
+
+// Make Correct answer button
+
+
+
+// track the right and wrong answers, keep the final score
 // Create an input box for players initials
-
+// Add the final score to local storage
 var formEl = document.querySelector('#input-form');
 var initialsEl = document.querySelector('input[name="Initials"]');
 
 function handleFormSubmit(event) {
   event.preventDefault();
-
   console.log('Initials', initialsEl.val());
 }
 formEl.addEventListener('submit', handleFormSubmit);
 
-// track the right and wrong answers, keep the final score
-// Add the final score to local storage
 
 // On that page have a "Clear High Scores" button to clear high scores
+
+// Function to show a question and answers based on an index
+
+// Click to view high scores, show initials/scores
+var hslink = document.querySelector(".hslink");
+
+hslink.addEventListener("click", function () {
+  // document.querySelector(" ").classList.add("hidden");
+  document.querySelector(".high-scores").classList.remove("hidden");
+  display();
+});
+
+// Back to homepage
+var back = document.querySelector(".back");
+
+back.addEventListener("click", function () {
+  // document.querySelector(".high-scores").classList.add("hidden");
+  document.querySelector(".start-quiz").classList.remove("hidden");
+  display();
+});
 
 // Clear all scores in local storage
 
 // Hover on answer boxes
 
 // Show after click if the answer is right or wrong
-
-
-
-
-
-// Create an array of questions
-// QUESTIONS
-
-// "What is JavaScript? (ANSWER = A)"
-// "a) JavaScript is a scripting language used to make the website interactive"
-// "b) JavaScript is an assembly language used to make the website interactive"
-// "c) JavaScript is a compiled language used to make the website interactive"
-// "d) None of the mentioned"
-
-// "Which of the following is correct about JavaScript? (ANSWER = A)"
-// "a) JavaScript is an Object-Based language"
-// "b) JavaScript is Assembly-language"
-// "c) JavaScript is an Object-Oriented language"
-// "d) JavaScript is a High-level language"
-
-// "Among the given statements, which statement defines closures in JavaScript? (ANSWER = B)"
-// "a) JavaScript is a function that is enclosed with references to its inner function scope"
-// "b) JavaScript is a function that is enclosed with references to its lexical environment"
-// "c) JavaScript is a function that is enclosed with the object to its inner function scope"
-// "d) None of the mentioned"
-
-// "Arrays in JavaScript are defined by which of the following statements? (ANSWER = A)"
-// "a) It is an ordered list of values"
-// "b) It is an ordered list of objects"
-// "c) It is an ordered list of string"
-// "d) It is an ordered list of functions"
-
-// "Which of the following can be used to call a JavaScript Code Snippet? (ANSWER = A)"
-// "a) Function/Method"
-// "b) Preprocessor"
-// "c) Triggering Event"
-// "d) RMI"
