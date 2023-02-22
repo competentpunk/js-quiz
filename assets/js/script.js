@@ -52,7 +52,7 @@ var qarray = [
   },
 ]
 
-// Timer
+// Timer and start
 var startbtn = document.querySelector(".startbtn");
 
 startbtn.addEventListener("click", function () {
