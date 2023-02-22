@@ -3,7 +3,7 @@ https://competentpunk.github.io/js-quiz/
 
 ## Description
 
-Timed coding quiz with multiple-choice questions. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code.
+Timed coding quiz with multiple-choice questions. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code. 
 
 Additional key elements:
 - Responsive layout
@@ -43,9 +43,9 @@ https://competentpunk.github.io/js-quiz/
 
 This application is meant to simplify the chosing of secure passwords, by randomly generating one using JavaScript.
 
-![Template screenshot](./assets/images/challenge-3-screenshot-1.png)
-![Template screenshot](./assets/images/challenge-3-screenshot-2.png)
-![Template screenshot](./assets/images/challenge-3-screenshot-3.png)
+![Template screenshot](./assets/images/challenge-4-screenshot-1.png)
+![Template screenshot](./assets/images/challenge-4-screenshot-2.png)
+![Template screenshot](./assets/images/challenge-4-screenshot-3.png)
 
 ## License
 

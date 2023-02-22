@@ -52,9 +52,7 @@ var qarray = [
   },
 ]
 
-
 // Timer
-// Timer START on click
 var startbtn = document.querySelector(".startbtn");
 
 startbtn.addEventListener("click", function () {
@@ -64,9 +62,7 @@ startbtn.addEventListener("click", function () {
   display();
 });
 
-// Selects element by class
 var timeEl = document.querySelector(".time");
-// Selects element by id
 var mainEl = document.getElementById("main");
 
 var secondsLeft = 75;
@@ -81,7 +77,7 @@ function setTime() {
       sendMessage("");
     }
 
-  }, 1000);
+  }, 1000); 
 }
 function sendMessage() {
   timeEl.textContent = "Time's Up!";
@@ -96,11 +92,17 @@ function display() {
   }
 }
 
+// Click event to move to next question
+// Function at end for final score, end screen, and timer stop
+
 
 // Player score and final score
 var playerTally = 0;
 var playerScore = 0;
 console.log(qarray[playerTally].question)
+
+
+
 
 // !!!!!!!! Attepmt to add counter to local storage
 // var count = localStorage.getItem("count");
@@ -127,15 +129,8 @@ console.log(qarray[playerTally].question)
 //   display();
 // });
 
+// Track answers, keep final score
 
-
-
-
-// Make Correct answer button
-
-
-
-// track the right and wrong answers, keep the final score
 // Create an input box for players initials
 // Add the final score to local storage
 var formEl = document.querySelector('#input-form');
@@ -150,14 +145,14 @@ formEl.addEventListener('submit', handleFormSubmit);
 
 // On that page have a "Clear High Scores" button to clear high scores
 
-// Function to show a question and answers based on an index
-
 // Click to view high scores, show initials/scores
 var hslink = document.querySelector(".hslink");
 
 hslink.addEventListener("click", function () {
   // document.querySelector(" ").classList.add("hidden");
   document.querySelector(".high-scores").classList.remove("hidden");
+  document.querySelector(".quiz").classList.add("hidden");
+  document.querySelector(".start-quiz").classList.add("hidden");
   display();
 });
 
@@ -165,13 +160,11 @@ hslink.addEventListener("click", function () {
 var back = document.querySelector(".back");
 
 back.addEventListener("click", function () {
-  // document.querySelector(".high-scores").classList.add("hidden");
+  document.querySelector(".high-scores").classList.add("hidden");
   document.querySelector(".start-quiz").classList.remove("hidden");
   display();
 });
 
 // Clear all scores in local storage
 
-// Hover on answer boxes
-
-// Show after click if the answer is right or wrong
+// Show after click if the answer is right or wrong 
